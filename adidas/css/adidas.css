@@ -1,0 +1,589 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+/*    Reset CSS  */
+* { 
+margin:0;  
+padding:0; }
+
+ol,ul { 
+list-style: none; }
+
+a { 
+outline:0; 
+text-decoration:none; 
+color:#bbb;}
+
+img { 
+border:0;}
+
+body { 
+position:fixed;  
+width:100%; 
+height:100%; 
+background:#fff;}
+
+em {font-style:none!important;}
+
+   /*  동영상   */s
+
+.vid { 
+width:100%; 
+height:100%; 
+position:fixed; 
+top:0px; 
+left:0px; 
+opacity:0.9;
+}
+
+.vid video {
+	width:100%; 
+	min-width:1000px;}
+	
+	/* 로고 */	
+	
+	h1 { 
+position:absolute; 
+top:10px;
+left:50px;
+z-index:10;
+}
+
+h1 img { 
+width:130px; 
+height:auto;
+}
+
+
+header { 
+width:100%; 
+height:300px; 
+position:fixed; 
+top:-230px; 
+left:0px; 
+background:#eee;
+transform:skewY(-3deg) }
+
+#ball img {
+	position:fixed; 
+	bottom:-645px;
+	right:-315px;
+	width: 1000px;
+	height:auto;
+	opacity:0.8;
+	transition:all 0.5s;
+
+}
+
+
+
+
+
+
+
+/* 첫번째 메뉴 */ 
+
+#das {
+float:left;
+width:100%; 
+position:relative;
+transform:skewX(-5deg);
+}
+	
+#das>li{
+	float:left;
+	position:relative;
+	width:230px;
+	top : 250px;
+	left: 330px;
+	transform:skewX(-0deg);
+}
+
+#das li a {
+float:left;
+display:block;   
+width :220px; 
+height:50px; 
+font :bold 18px/3 play;
+color:#222;
+text-align : center;
+ }
+
+#das li:hover a { 
+background: #fff; 
+color:#000; }
+
+#das em {
+	display:inline-block;
+
+}
+
+#das em i {
+	margin-right:20px;
+}
+
+
+/* 두번째 메뉴 */ 
+
+#das li ul {
+	float:left;
+	position:relative;
+	width:220px;
+	height:auto;
+	opacity:0;
+	transition:all 0.4s;
+	background:#fff;
+
+}
+
+#das li ul li {
+	float:left;
+	width:220px;
+}
+
+#das li:hover ul {
+
+opacity:1;}
+
+#das ul a {
+	display:block;
+	width:220px;
+	height:40px;
+	background:#fff;
+	border-bottom:1px solid #000;
+	font:bold 16px/2.5 arial;
+	color:#000;
+	box-sizing:border-box;
+	text-align:center;
+	border-bottom:1px solid #000;
+	transition: all 0.5s;
+
+}
+
+#das ul a:hover {
+	background : #b9fb05; color:#333;	
+}
+
+#das img {height:25px; vertical-align:middle; margin-left:-20px; margin-right:10px;}
+
+
+/*하단 메뉴*/
+
+
+
+#dasbottom { 
+width:100%; 
+height:400px; 
+position:fixed; 
+bottom:-250px; 
+left:0px; 
+background:#000; }
+
+#dasbottom nav {float:right; width:100%;}
+#dasbottom nav ul{float:right;}
+#dasbottom nav li {float:left; margin-right:30px;}
+.footer_logo {width:100%; height:auto;}
+.footer_logo div {margin:50px;}
+.footer_logo img {float:right;width:200px;}
+.footer_logo p {float:right; color:#fff; font-size:7px; width:800px; margin-left:30px;}
+
+/*하단 1번쨰*/
+
+
+
+
+#das2 {
+width:100%; 
+	position:absolute;
+
+top:0px; 
+}
+	
+#das2>li{
+	list-style:none;
+	position:relative;
+	top : 0px;
+	left: 550px;
+}
+
+#das2>li>a {
+float:left;
+display:block;   
+width :220px; 
+height:50px; 
+font :bold 18px/3 play;
+color:#222;
+box-sizing:border-box;
+padding-right: 0px;
+text-align : center;
+transform:skewX(-14deg); }
+
+#das2 li:hover a { 
+background: #111; 
+color:#fff; }
+
+#das2 em {
+	display:inline-block;
+
+}
+
+#das2 em i {
+	margin-right:20px;
+}
+
+
+
+/*   하단 2번째    */ 
+
+
+
+
+#das2 ul {
+	float:left;
+	height:0px;
+	left:0px;
+	position:relative;
+	opacity:0;
+	transition:all 0.4s;
+	transform:skewX(-14deg);
+
+}
+
+#das2 li ul li {float:left; position:relative; left:-205px;}
+
+#das2 li:hover ul {
+	bottom:40px;
+opacity:0.8;}
+
+#das2 ul a {
+	display:block;
+	width:150px;
+	height:40px;
+	background:#222;
+	border-bottom:1px solid #000;
+	font:bold 16px/2.5 arial;
+	color:#fff;
+	box-sizing:border-box;
+	text-align:center;
+	margin-bottom: 3px;
+	transition: all 0.5s;
+	
+}
+
+#das2 ul a:hover {
+	background : #b9fb05; color:#333;	
+}
+
+
+
+
+
+
+/* SNS 박스 */
+
+#sns {
+	position:fixed;
+	top:10px;
+	left:70%;
+}
+#sns li {
+	float :left;
+	margin-right :30px;
+}
+
+#sns .fa {
+	font-size:25px;
+	color:#000;
+	opacity:0.5;
+	transform:scale(1);
+	transition:all 0.5s;
+}
+
+#sns .fa:hover {
+	opacity:1;
+	transform:scale(1.4);
+}
+
+
+
+
+/* contents 레이아웃 */
+
+
+
+
+#side {
+	width:500px;
+	height: 100%;
+	position:fixed;
+	bottom:0px;
+	right:-320px;
+	opacity:0.9;
+	
+	transition:all 0.5s;
+	
+}
+
+#side:hover {
+	right:50px;
+	opacity :0.8
+}
+
+#side .con {
+	width:500px;
+	height:100%;
+	position:absolute;
+	left:150px;
+	bottom:0px;
+	background:#eee;
+	box-sizing:border-box;
+	padding:10px;
+	transition: all 1s;
+	border-radius:50px;
+}
+
+#side:hover .con {
+	left:200px;
+}
+
+/* contents 썸네일 */
+#side .con p {
+	width:300px;
+	height:300px;
+	position: absolute;
+	left:50px;
+	
+}
+
+#side .con p em {
+	display:inline-block;
+	font: bold 16px/1.7 arial;
+	color: #a0bd50;
+	transform: skewX(-7deg);
+	
+}
+
+#side .con p img {
+	width:300px;
+	height:200px;
+	opacity:0.3;
+	transition:all 0.5s;
+}
+
+#side .con p.banner {
+	position:absolute;
+	width:150px;
+	height:100px;
+	opacity:1;
+	transition:all 0.5s;
+}
+
+#side .con p img:hover {
+	opacity:1;
+}
+
+#side .con p:nth-child(1) {
+	bottom:570px;
+	transform: translateX(200px);
+	transition: all 0.4s;
+}
+
+#side .con p:nth-child(2) {
+	bottom:320px;
+	transform: translateX(200px);
+	transition: all 0.8s;
+}
+
+#side .con p:nth-child(3) {
+	bottom:70px;
+	transform: translateX(200px);
+	transition: all 1.2s;
+}
+
+#side .con p:nth-child(4) {
+	left: 40px;
+	bottom:70px;
+	transform: translateX(200px);
+	transition: all 1.2s;
+}
+
+#side:hover .con p {
+	transform:translateX(0px);
+}
+ 
+
+#side .btncontents{
+   width:150px;
+   height:50px;
+   position:absolute;
+   bottom:480px;
+   left:120px;
+   color:#b9fb05;
+   transform:skewX(7deg);
+}
+#side:hover .btncontents{left:700px;}
+
+
+.btncontents i{
+   font-size:50px;
+   position:absolute;
+   bottom:0px;
+   right:50px;
+   opacity:1;
+   color:#000;
+}
+.btncontents i:nth-child(1){animation:ani linear 1.5s 0s infinite;}
+.btncontents i:nth-child(2){animation:ani linear 1.5s 0.5s infinite;}
+.btncontents i:nth-child(3){animation:ani linear 1.5s 1.0s infinite;}
+@keyframes ani{
+   0%{right:30px; transform:sclae(1);opacity:1;}
+   100%{right:100px;transform:sacle(1.5);opacity:0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-device-width : 414px) {
+	 
+	 
+header { 
+width:100%; 
+height:300px; 
+position:fixed; 
+top:-150px; 
+left:0px; 
+background:#eee;
+transform:skewY(0deg) }
+
+
+#das {
+float:left;
+width:100%; 
+position:relative;
+transform:skewX(0deg);
+}
+ 
+h1 { 
+position:absolute; 
+top:10px;
+left:20px;
+z-index:10;
+}
+
+h1 img { 
+width:100px; 
+height:auto;
+
+}
+ 
+ #das>li{
+	float:left;
+	position:relative;
+	width:240px;
+	top : 250px;
+	left: 20px;
+	transform:skewX(-0deg);
+	
+}
+
+#das li a {
+float:left;
+display:block;   
+width :240px; 
+height:50px; 
+font :bold 18px/3 play;
+color:#222;
+text-align:center;
+text-align:center;
+font-size:30px;
+line-height:50px;
+ }
+ 
+ #das em i {
+	margin-right:5px;
+}
+
+#das2>li>a {width:150px;}
+#das li ul {width:150px;}
+
+#sns .fa {
+	font-size:40px;
+	color:#000;
+	opacity:0.5;
+	transform:scale(1);
+	transition:all 0.5s;
+	margin-top:20px;
+}
+
+#sns {left:65%;}
+
+.content {
+	position:absolute;
+	margin-top:-1%;
+	width:100%;
+	height:800px;
+	background:#fff;
+	} 
+	
+.content div{
+	float:left; 
+	width:50%;
+	height:400px;
+
+	} 
+	
+.content div:nth-child(1) {background:#fff url(../img/o1.jpg); }
+.content div:nth-child(2) {background:#fff url(../img/o2.jpg); }
+.content div:nth-child(3) {background:#fff url(../img/o3.jpg); }
+.content div:nth-child(4) {background:#fff url(../img/o4.jpg); }
+ 
+.content>div>a {float:left; position:relative; left:100px; margin-top:300px;
+width:300px; height:50px; background:#fff; text-align:center; line-height:50px; border:1px solid #000;
+color:#000; transition:all 0.7s; opacity:1; font-weight:bold; font-size:20px;}
+
+.content div a:active {background:#000; color:#fff;transition:0.5s;}
+
+#dasbottom {
+float:left;
+width:100%; 
+height:330px; 
+position:fixed; 
+top:1450px; 
+left:0px; 
+background:#000; }
+
+#dasbottom nav {float:right; width:100%;margin-top:10px;}
+#dasbottom nav ul{float:right;}
+#dasbottom nav li {float:left; margin-right:30px;}
+#dasbottom nav li a{font-size:20px; font-weight:bold;}
+.footer_logo {width:100%; height:auto;}
+.footer_logo div {margin:50px;}
+.footer_logo img {float:left;width:250px;}
+.footer_logo p {float:left; color:#fff; font-size:8px; width:800px; margin-left:0px;}
+ 
+ 
+ #side {display:none;}
+ 
+ .vid {background:#000 url(http://image.adidas.co.kr/images/adidas/event/athletic/video.jpg);
+	background-position:-450px 0;
+	margin-top:100px;
+  }
+ }
+
+
+
+
+
+

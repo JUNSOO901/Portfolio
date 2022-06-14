@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+/* reset */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+body { font-family:Oswald; min-width : 1280px;} 
+
+
+
+/* 전체프레임 */
+
+#wrap {position:absolute; width:100%; height:auto;margin:0 auto; min-width : 860px;}
+
+
+
+
+/* 헤더 */
+#header {position:relative; width:100%; height:auto; top:0px; background:#aaa; min-width:1500px;}
+.top {background:#222; height:40px;}
+.top nav {height:40px; width:60%; margin:0 auto;}
+.top nav li{height:40px; float:left;text-align:center; margin-right:20px; line-height:35px;}
+.top nav a{color:#fff;}
+.mainmenu {background:#fff; height:80px;}
+.mainmenu ul {float:left; width:80%;height:80px;}
+.mainmenu li {float:left; width:13.3%;height:80px; text-align:center; line-height:75px;}
+.mainmenu li a {float:left; width:13.3%;height:80px; text-align:center; line-height:75px;}
+.mainmenu li:hover {background:#F49719; color:#fff;}
+.mainmenu li a {font-size:24px; color:#000; width:100%; height:80px;}
+.mainmenu li a:hover {background:#F49719; color:#fff;}
+.main_logo img {position:relative;float:left; width:280px; margin:5px;}
+
+
+
+
+/* 갤러리 */
+.gallery {position:relative; width:100%; height:350px; background:#ddd; overflow:hidden; margin-bottom:20px;}
+.gallery img {width:50%;height:; overflow:hidden;}
+
+
+/* 콘텐츠 */
+.contents {position:relative; width:100%; height:auto; float:left;}
+.login {float:left; width:380px; height:600px;  margin:35px 0px 0px 35px;}
+.hotclip { float:left; width:380px; height:600px; margin:35px 0px 0px 35px;}
+.event {float:left; width:380px; height:600px; margin:35px 0px 0px 35px;}
+.notice {float:left; width:380px; height:600px; margin:35px 0px 0px 35px;}
+.freeboard {float:left;width:380px; height:600px; margin:35px 0px 0px 35px;}
+.schedules {float:left;width:380px; height:600px; margin:35px 0px 0px 35px;}
+.content_title {height:50px; width:380px;font-size:24px; line-height:50px;}
+.content_box {height:550px; width:380px; background:#ECECEC; box-shadow:2px 2px 5px #999;}
+
+
+
+/* 푸터 */ 
+#footer {position:relative; float:left;width:100%; height:auto; background:#999; margin-top:40px;}
+.upfooter {height:40px; background:#222;}
+.downfooter {height:140px; background:#444;}
+
+
+

@@ -1,0 +1,466 @@
+<!DOCTYPE html >
+<html lang="kor">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta charset="utf-8">
+	<title> 김준수 -  키즈(챔프) </title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/8d5b80d152.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+</head>
+
+
+<body>
+
+<!-- 전체 프레임 -->
+<div id="wrap">
+
+
+<!--헤더 -->
+<div id="header">
+	<div class="top">
+		<div class="topmenu">
+			<nav>
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">즐겨찾기추가</a></li>
+					<li><a href="#">ENGLISH</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!--The end .topmenu-->
+	</div>
+	<!--The end .top-->
+	<div class="mainmenu">
+		<div class="main_logo"><a href="index.html"><img src="img/logo.png"></a></div>
+		<ul>
+			<li><a href="index_notice.html">소식</a>
+				<ul>
+					<li><a href="index_notice.html">공지사항</a></li>
+					<li><a href="#">안내</a></li>
+					<li><a href="#">편성안내</a></li>
+				</ul>
+			</li>
+			<li><a href="#">편성표</a></li>
+			<li><a href="#">프로그램</a>
+				<ul>
+					<li><a href="#">신규프로그램</a></li>
+					<li><a href="#">인기프로그램</a></li>
+					<li><a href="#">극장판</a></li>
+				</ul>
+			</li>
+			<li><a href="#">커뮤니티</a>
+				<ul>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">건의게시판</a></li>
+				</ul>
+			</li>
+			<li><a href="#">이벤트</a>
+				<ul>
+					<li><a href="#">진행중인 이벤트</a></li>
+					<li><a href="#">지난 이벤트</a></li>
+					<li><a href="#">당첨자 확인</a></li>
+				</ul>
+			</li>
+			<li><a href="#">자료실</a>
+				<ul>
+					<li><a href="#">월페이퍼</a></li>
+					<li><a href="#">동영상</a></li>
+					<li><a href="#">이미지</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+	
+	<script>
+		$('.mainmenu li').hover(
+		  function() {
+			  $('ul', this).stop().slideDown(200);
+		  },
+			function() {
+			$('ul', this).stop().slideUp(200);
+		  }
+		);
+		</script>
+	<!--The end .mainmenu-->
+</div>
+<!--The end #header-->
+
+
+<!-- 갤러리 -->
+<div class="gallery">
+
+
+
+  <section class="autoplay">
+    <div>
+      <img src="img/d1.jpg">
+    </div>
+    <div>
+      <img src="img/d2.jpg">
+    </div>
+    <div>
+      <img src="img/o1.jpg">
+    </div>
+    <div>
+      <img src="img/o2.jpg">
+    </div>
+    <div>
+      <img src="img/b1.jpg">
+    </div>
+    <div>
+      <img src="img/b2.jpg">
+    </div>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+		$('.autoplay').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		dots: true,
+		infinite: true,
+		});
+    });
+  </script>
+
+</div>			
+<!--The end .gallery-->
+
+<!-- 콘텐츠박스 -->
+<div class="content">
+
+<!-- 첫번째(로그인) 박스 -->
+		<div>
+			<div class="content_title"><img src="img/i/1.png">로그인
+			</div>
+			<div class="content_box">
+				<form class="login">
+					<div class="login_id">
+					<input type="text" name="id" tabindex="7" placeholder="아이디">
+					<input type="text" name="id" tabindex="7" placeholder="비밀번호">
+					</div>
+					<div class="login_submit">
+					<input id="submit" type="submit" title="로그인" value="로그인">
+					</div>
+					<a class="id_find" href="#">ID / PW 찾기</a>
+					<a class="join" href="#">회원가입</a>
+				</form>
+				
+				<div class="onair">
+					<h2><span>ON</span>-AIR</h2>
+					<img src="img/monsterwatch.png" style="width:320px">
+					<p>현재방송 : 요괴워치</p>
+					<p>다음방송 : 요괴워치</p>
+				</div>
+			</div>
+		</div>
+<!-- 첫번째박스 끝 -->
+		
+<!-- 두번째(핫클립) 박스 -->
+		<div class="hotclip">
+			<div class="content_title">
+			<img src="img/i/2.png">핫클립
+			<a href="#" alt="더보기"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			
+			<div class="content_box">
+			
+			<div class="clip_box">
+			
+				<div class="clipBig">
+					<a href="#">
+						<section class="autoplay2">
+							<div>
+							  <img src="img/banner_o.jpg">
+							  <p>원피스 3기
+								<span>오후 8:30 ~ 8:50</span>
+								</p>
+							</div>
+							<div>
+							  <img src="img/banner_b.jpg">
+							    <p>
+								블리치 2기
+								<span>오후 8:00 ~ 8:20</span>
+								</p>
+							</div>
+							<div>
+							<img src="img/banner_dora.jpg">
+							<p>도라에몽 4기
+							<span>오후 7:30 ~ 7:50</span>
+							</p>
+							</div>
+							<div>
+							  <img src="img/banner_watch.jpg">
+							  	<p>요괴워치 요로로
+								<span>오후 7:00 ~ 7:20</span>
+								</p>
+							</div>
+							<div>
+							  <img src="img/banner_o.jpg">
+							<p>원피스 3기
+							<span>오후 8:30 ~ 8:50</span>
+							</p>
+							</div>
+							<div>
+							  <img src="img/banner_naruto.jpg">
+							  <p>나루토 질풍전 4기
+								<span>오후 7:30 ~ 7:50</span>
+								</p>
+							</div>
+							
+						</section>
+  
+					  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+					  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+					  <script type="text/javascript">
+						$(document).on('ready', function() {
+							$('.autoplay2').slick({
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							autoplaySpeed: 4000,
+							infinite: true,
+							dots: true,
+							});
+						});
+					  </script>
+					</a>
+				</div>
+				
+				
+				<div class="clip">
+					<div>
+					<a href="#">
+						<img src="img/bleach1.jpg">
+						<p>
+						블리치 2기
+						<span>오후 8:00 ~ 8:20</span>
+						</p>
+					</a>
+					</div>
+					
+					
+					<div>
+					<a href="#"><img src="img/monsterwatch.png">
+					<p>요괴워치 요로로
+					<span>오후 7:00 ~ 7:20</span>
+					</p>
+					</a>
+					</div>
+					
+					
+					<div>
+					<a href="#"><img src="img/doramong1.png">
+					<p>도라에몽 4기
+					<span>오후 7:30 ~ 7:50</span>
+					</p>
+					</a>
+					</div>
+					
+					
+					<div>
+					<a href="#"><img src="img/onepiece2.png">
+					<p>원피스 3기
+					<span>오후 8:30 ~ 8:50</span>
+					</p>
+					</a>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			</div>
+		</div>
+<!-- 두번째 박스 끄읕 -->
+		
+<!-- 세번째 박스(이벤트) -->
+		<div class="event">
+			<div class="content_title"><img src="img/i/3.png">이벤트
+			<a href="#" alt="더보기"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			<div class="content_box">
+				<div class="event_box">
+					<div class="event"><a href="#"><img src="img/event1.jpg"></a></div>
+					<div class="event"><a href="#"><img src="img/event2.jpg"></a></div>
+					<div class="event"><a href="#"><img src="img/event3.jpg"></a></div>
+					<div class="event"><a href="#"><img src="img/event4.jpg"></a></div>
+
+				</div>
+			</div>
+		</div>
+<!-- 세번째 박스(이벤트) 끝 -->		
+
+<!-- 네번째 박스 시작(공지) -->
+		<div>
+			<div class="content_title"><img src="img/i/4.png">공지사항
+			<a href="#" alt="더보기"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			<div class="content_box">
+				<div class="notice">
+					<div class="notice_title">
+						<div><a href="#">전체</a></div>
+						<div><a href="#">안내</a></div>
+						<div><a href="#">편성</a></div>
+					</div>
+					
+					<div class="notice_list">
+						<ol>
+							<li><a href="#">[2017년 4월 신작 안내]</a></li>
+							<li><a href="#">[신작 일정 변경] 나의 히어로 아카데미아 완전정복 편성 연기</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[4월 신작 안내] 파워레인저 다이노포스 브레이브</a></li>
+							<li><a href="#">[편성 변경 안내] 신 도라에몽 11</a></li>
+							<li><a href="#"> [신작]3월3주(3.13~3.19)</a></li>
+							<li><a href="#"> 새 학기 이벤트가 찾아 왔습니다.!!</a></li>
+							<li><a href="#"> [신작]3월2주(3.6~3.12)</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+							<li><a href="#">[2017년 3월 신작 안내]</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- 네번째 박스 끝(공지) -->
+		
+		<div><!-- 5번째 박스 시작(자게) -->
+			<div class="content_title"><img src="img/i/5.png">자유게시판
+			<a href="#" alt="더보기"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			<div class="content_box">
+				<div class="freeboard">
+						<div class="notice_title">
+						<div><a href="#">전체</a></div>
+						<div><a href="#">안내</a></div>
+						<div><a href="#">편성</a></div>
+					</div>
+					<div class="freeboard_img">
+						<div><a href="#"><img src="img/one2.jpg"><p>원피스 너무 재밌다~!</p></a></div>
+						<div><a href="#"><img src="img/one3.png"><p>와 지림;</p></a></div>
+					</div>
+					
+					<div class="notice_list">
+						<ol>
+							<li><a href="#">챔프 운영자님. 추억의 애니.. MBC성우원판 은하철도999. 천년여왕등을 방영해주시면 고맙겠습니다.  </a></li>
+							<li><a href="#"> 가면라이더 고스트 드라마처럼 방송되는 애니메이션인데 진짜 부속품 구하기 정말 힘드네요 이벤트..상품 </a></li>
+							<li><a href="#"> 이벤트 이제 가면라이더 35화 곧 38화 되는 시점에. 이제 이벤트 바꿔주시네요 . 글을 남겼다고 당첨이 안 [1]</a></li>
+							<li><a href="#"> 평성표가 안맞는것 같아요 [1]</a></li>
+							<li><a href="#"> 운영자님 협찬 상품 하고 자체 상품 비교 하는게 아니라. 전 이벤트의 내용을 말하는 겁니다.  [1]</a></li>
+							<li><a href="#"> 어차피 광클 같은 경우 별로 가지고 싶지 않았지만. 가면라이더는 아쉽네요  [1]</a></li>
+							<li><a href="#">  운영자님 가면라이더 고스트 이벤트 이번이 마지막 이벤트인데 궁금 한게 진짜 있습니다. 꼭 답변 바랍니다 [1]</a></li>
+							<li><a href="#"> 운영자님 이벤트 이거 하시는것은 좋은데 선물 하며 이벤트 하며 이거 다양하게 해주실수 없나요? 아무리  [1]</a></li>
+							<li><a href="#"> 운영자님 이번 이벤트는 솔직히 안하시는게 더 좋을 뻔 봤습니다. 아이콘.이름 맞추기..  [1]</a></li>
+							<li><a href="#"> 운영자님 혹시 꿈의보석 프리즘 스톤 영상 가지고 계시나요? 좀 돈 주고라도 보고 싶은데..  [1]</a></li>
+
+
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 마지막 박스 시작 -->
+		<div>
+			<div class="content_title"><img src="img/i/6.png">편성표
+			<a href="#" alt="더보기"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			<div class="content_box">
+				<div class="schedules">
+					<div  class="schedules_day">
+						
+						<p>
+						<a href="#"><i class="fa fa-caret-left" aria-hidden="true"></a></i>
+						2017. 03. 30 (목)
+						<a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+						</p>
+						
+					</div>
+					<div  class="schedules_table">
+						<ol>
+							<li><p>6:00</p><span>라바VS라바 - 17화 영화/모기</span></li>
+							<li><p>7:00</p><span>라바VS라바 - 18화 개구리/댄스2</span></li>
+							<li><p>8:00</p><span>라바VS라바 - 19화 고치/뮤직</span></li>
+							<li><p>9:00</p><span>라바VS라바 - 20화 소시지2/휘파람</span></li>
+							<li><p>10:00</p><span>유희왕 1 - 44화 전설의 용사 유희!</span></li>
+							<li><p>11:00</p><span>12영웅전사 - 22화</span></li>
+							<li><p>12:00</p><span>신 도라에몽 2 - 20화 생각대로 알약 / 세상은 거짓말투성이(자막)</span></li>
+							<li><p>13:00</p><span>신 도라에몽 2 - 21화 노진구 표류기 / 2차원 카메라(자막)</span></li>
+							<li><p>14:00</p><span>신 도라에몽 2 - 22화 시한바보탄 / 미리 일기장은 무서워(자막)</span></li>
+							<li><p>15:00</p><span>터닝메카드W - 10화 그리핑크스를 되찾아라!</span></li>
+							<li><p>16:00</p><span>애슬론 파헤치기-레이싱 챔피언 - 2화</span></li>
+							<li><p>17:00</p><span>애슬론 파헤치기-레이싱 챔피언 - 3화</span></li>
+							<li><p>18:00</p><span>보글보글 쿡 - 15화</span></li>
+							<li><p>19:00</p><span>보글보글 쿡 - 16화</span></li>
+							<li><p>20:00</p><span>짜장소녀 뿌까 - 15화 공포의 벨소리/우리 숲을 지켜라/사인받기 대작전</span></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!--The end .content-->
+
+
+
+
+<!-- 푸터 -->
+<div id="footer">
+	<div class="upfooter">
+		<div class="top">
+			<div class="footermenu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">광고 및 제휴안내</a></a></li>
+					<li><a href="#">시청안내</a></li>
+					<li><a href="#">큐톤 출력표</a></li>
+					<li><a href="#">개인정보 취급방침</a></li>
+					<li><a href="#">회원약관</a></li>
+					<li><a href="#">이메일 수집 거부</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="downfooter">
+		<div class="footer_logo"><img src="img/logo_footer.png"></div>
+		<div class="footer_p">
+			<ul>
+				<li>
+(주) 챔프비전 / 대표자 : 강신웅 / 사업자 등록번호 : 106-86-33991 / 통신판매 신고번호 : 2008-서울마포-0546호</li>
+				<li>주소 : 서울시 종로구 신문로 1가 226 흥국생명빌딩 8층 / 팩스 : 070-8145-3207</li>
+				<li>Copyright (c) Champ Vision INC. 2005-2016 All right reserved.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--The end #footer-->
+
+</div>
+<!--The end #wrap-->
+</body>
+
+</html>

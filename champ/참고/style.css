@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+}
+html, body{
+	height:100%;
+}
+
+#wrap{
+	position:relative;
+	width : 100vw;
+	background:#999;
+}
+
+#header{
+	position:relative;
+	top:0;
+	width : 100vw;
+	background:#a95;
+}
+
+.gallery{
+	position:relative;
+	width : 100vw;
+	background:#777;
+	height:350px;
+}
+
+
+
+.content{
+	position:relative;
+	width:80%;
+	height:700px;
+	margin : 0 auto;
+	overflow:visible;
+	padding-bottom : 200px;
+}
+
+.content>div{
+	position:relative;
+	float:left;
+	width: 380px;
+	height: 650px;
+	margin:30px;
+	border:1px solid #f00;
+}
+
+
+#footer{
+	position: relative;
+	clear:both;
+	width : 100vw;
+	height:200px;
+	background:#eee;
+	bottom:0;
+}

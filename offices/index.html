@@ -1,0 +1,428 @@
+<!DOCTYPE html >
+<html lang="kor">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta charset="utf-8">
+	<title> 김준수 -  관공서 </title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/8d5b80d152.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+	
+</head>
+<body>
+
+
+<!-- 전체 프레임 -->
+<div id="wrap">
+	
+	<!-- 1. 헤드 영역 -->
+	
+	<div id="header">
+	
+		
+		
+		
+		<!-- 상단메뉴 메뉴 -->
+			<div class="gnb">
+				
+				<ul class="menu">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH<i class='fa fa-angle-down'></i></a></li>
+				</ul>
+				
+				<ul class="sns">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				</ul>
+				
+			</div>
+		
+		
+		<!-- 주 메뉴 -->
+		<nav >
+		  <div class="container">
+			<ul>
+			  <li><a href="./info.html">소개</a></li>
+			  <li><a href="#">시민소통</a></li>
+			  <li> <a href="#">전자민원<i class='fa fa-angle-down'></i></a>
+				<ul>
+				  <li><a href="#">전자민원청구</a></li>
+				  <li><a href="#">민원서식</a></li>
+				  <li><a href="#">세무민원안내</a></li>
+				</ul>
+			  </li>
+			  <li class='sub-menu'> <a href="#">생활정보<i class='fa fa-angle-down'></i></a>
+				<ul>
+				  <li><a href="#">취업</a></li>
+				  <li><a href="#">생활</a></li>
+				  <li><a href="#">생활지리</a></li>
+				  <li><a href="#">문화</a></li>
+				  <li><a href="#">교통</a></li>
+				  <li><a href="#">안전</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">알림마당</a></li>
+			</ul>
+		  </div>
+		</nav>
+		
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+		<script>
+		$('nav li').hover(
+		  function() {
+			  $('ul', this).stop().slideDown(200);
+		  },
+			function() {
+			$('ul', this).stop().slideUp(200);
+		  }
+		);
+		</script>
+
+	</div>
+	
+	<!-- 2. 콘텐츠 영역 -->
+	
+	<div id="content"> 
+
+
+	
+		
+		<div class="topcon">
+		
+			<!--로고 -->
+			<a href="#"><img class="logo" src="img/logo.png"></a>
+			
+			<div class="searchbar">
+				<span class="keyword">
+				<input type="text" id="nx_query" name="query" class="box_window" maxlength="255" accesskey="s" value="" autocomplete="off" title="검색어 입력">
+				</span>
+			</div>
+			
+			<button type="submit">검색</button>
+		</div>
+		
+		
+		<div class="midcon">
+			<div class="banner">
+				<div class="content" style="width:600px;height:350px;overflow:hidden; margin:50px auto;">
+						<div id="slider">
+							<a href="#"><img src="./img/1.jpg"/></a>
+							<a href="#"><img src="./img/2.jpg"/></a>
+							<a href="#"><img src="./img/3.jpg"/></a>
+							<a href="#"><img src="./img/4.jpg"/></a>
+							<a href="#"><img src="./img/5.jpg"/></a>
+							<a href="#"><img src="./img/6.jpg"/></a>
+							<a href="#"><img src="./img/7.jpg"/></a>
+						</div>
+				</div>
+
+				<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+				<script src="vmc.slider.full.js"></script>
+				<script>
+				$('#slider').vmcSlider({
+						width: 630,
+						height: 350,
+						gridCol: 10,
+						gridRow: 5,
+						gridVertical: 20,
+						gridHorizontal: 10,
+						autoPlay: true,
+						ascending: true,
+						effects: [
+							'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+							'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight'
+							
+						],
+						ie6Tidy: false,
+						random: true,
+						duration: 5000,
+						speed: 900
+					});
+				</script>
+			</div>
+			
+			<div class="weather">
+				<div class="weather_info">
+					<img src="img/weather_info.png" alt="날씨">
+				</div>
+				
+				<div class="weather_week">
+					<img src="img/weather_week.png" alt="날씨">
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="botcon">
+			<div class="botleft">
+				<div class="news">
+					<h3>새소식</h3>
+					<ul>
+						<li><a href="#">이케아코리아 고양점 채용설명회 안내 <img src="img/icon_new.gif"></a><span>2017.03.21</span></li>
+						<li><a href="#">국민 공감 생활규제 개혁 과제 공모전 안내 <img src="img/icon_new.gif"></a><span>2017.03.21</span></li>
+						<li><a href="#">파주시 광탄면 군부대 공포탄 사격 알림 <img src="img/icon_new.gif"></a><span>2017.03.21</span></li>
+						<li><a href="#">시민게시판(2017년 4월 ) 당첨자 명단</a><span>2017.03.21</span></li>
+						<li><a href="#">시민게시판(2017년 2월 ) 당첨자 명단</a><span>2017.03.21</span></li>
+						<li><a href="#">시민게시판(2017년 1월 ) 당첨자 명단</a><span>2017.03.21</span></li>
+						<li><a href="#">시민게시판(2016년 12월 ) 당첨자 명단</a><span>2017.03.21</span></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="botright">
+				<div class="blog">
+					<a href="#" class="facebook"><img src="img/facebook.png"><p>페이스북</p></a>
+					<a href="#" class="twitter"><img src="img/twitter.png"><p>트위터</p></a>
+					<a href="#" class="instargram"><img src="img/instagram.png"><p>인스타그램</p></a>
+					<a href="#" class="blog-link"><img src="img/blog.png"><p>블로그</p></a>
+				</div>
+				
+				<div class="map">
+				<a href="#" class="facebook"><img src="img/map.png"><p>오시는길</p></a>
+				<a href="#" class="facebook"><img src="img/facebook.png"><p>조직안내</p></a>
+				</div>
+				
+			</div>
+			<div class="infomation">
+				<div class="infomation-in">
+				<h3>추천 정보</h3>
+					<ul>
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/1.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">고양시 보건소 암검진</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/2.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">고양시 SNS 가이드</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/3.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">2017 고양국제꽃박람회</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/4.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">2017 고양국제꽃박람회</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/5.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">고양시 스포츠 통합브랜드 SC GOYANG 유니폼 공개</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/6.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">시민게시판(2017년 4월 상반기) 당첨자 명단</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/7.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">고양도시관리공사 홍보영상</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/1.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">SNS 소통 메뉴얼 1화</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/2.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">시민게시판(2017년 4월 상반기) 당첨자 명단</p>
+							</a>
+							</div>
+						</li>
+						
+						<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/3.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">고양생생소식_249</p>
+							</a>
+							</div>
+						</li>
+						
+							<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/4.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">개소식 영상</p>
+							</a>
+							</div>
+						</li>
+						
+							<li>
+							<div class="list-layout">
+							<a href="#">
+								<img src="./img/5.jpg">
+							</a>
+							</div>
+							
+							<div class="list-layout2">
+							<a href="#">
+								<p class="info-title">고양시보건소 올바른생활습관</p>
+							</a>
+							</div>
+						</li>
+						
+						
+						
+					</ul>
+				</div>
+			</div>
+			<div class="botbotrigth">
+				<div class="menu-list">
+					<ul>
+						<li><a href="#"><i class="fa fa-archive"></i> 전체 사이트</a></li>
+						<li><a href="#"><i class="fa fa-external-link"></i> 홈페이지 바로잡기</a></li>
+						<li><a href="#"><i class="fa fa-universal-access"></i> 일산 안전제일</a></li>
+						<li><a href="#"><i class="fa fa-home"></i> 부동산 정보</a></li>
+						<li><a href="#"><i class="fa fa-lightbulb-o"></i> 보육포털</a></li>
+						<li><a href="#"><i class="fa fa-headphones"></i> 일자리포털</a></li>
+						<li><a href="#"><i class="fa fa-car"></i> 일산관광</a></li>
+						<li><a href="#"><i class="fa fa-pencil-square-o"></i> 공공서비스예약</a></li>
+						<li><a href="#"><i class="fa fa-paw"></i> 일산의 공원</a></li>
+						<li><a href="#"><i class="fa fa-headphones"></i> 고객센터</a></li>
+					</ul>
+				</div>
+				
+				<div class="nono"><a href="#"><img src="img/2.jpg"></a></div>
+				<div class="nono"><a href="#"><img src="img/4.jpg"></a></div>
+				<div class="nono"><a href="#"><img src="img/nono2.jpg"></a></div>
+			</div>
+
+
+		
+			
+		</div>
+	
+	
+	</div>
+	
+	
+	<div id="footer">
+		<div class="fnb">
+			<ul>
+				<li><a href="#">개인정보취급방침</a></a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">문의 보내기</a></li>
+				<li><a href="#">공문 보내기</a></li>
+				<li><a href="#">기타</a></li>
+			</ul>
+		</div>
+		
+		<div class="info">
+			<div>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+	
+	
+	
+	
+	
+
+</body>
+</html>

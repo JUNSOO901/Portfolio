@@ -1,0 +1,194 @@
+<!DOCTYPE html >
+<html lang="kor">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta charset="utf-8">
+	<title> 김준수 -  관공서 </title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/8d5b80d152.css">
+	<link rel="stylesheet" href="css/info.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+	
+</head>
+<body>
+
+
+<!-- 전체 프레임 -->
+<div id="wrap">
+	
+	<!-- 1. 헤드 영역 -->
+	
+	<div id="header">
+	
+		
+		
+		
+		<!-- 상단메뉴 메뉴 -->
+			<div class="gnb">
+				
+				<ul class="menu">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH<i class='fa fa-angle-down'></i></a></li>
+				</ul>
+				
+				<ul class="sns">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				</ul>
+				
+			</div>
+		
+		
+		<!-- 주 메뉴 -->
+		<nav >
+		  <div class="container">
+			<ul>
+			  <li><a href="#">소개</a></li>
+			  <li><a href="#">시민소통</a></li>
+			  <li> <a href="#">전자민원<i class='fa fa-angle-down'></i></a>
+				<ul>
+				  <li><a href="#">전자민원청구</a></li>
+				  <li><a href="#">민원서식</a></li>
+				  <li><a href="#">세무민원안내</a></li>
+				</ul>
+			  </li>
+			  <li class='sub-menu'> <a href="#">생활정보<i class='fa fa-angle-down'></i></a>
+				<ul>
+				  <li><a href="#">취업</a></li>
+				  <li><a href="#">생활</a></li>
+				  <li><a href="#">생활지리</a></li>
+				  <li><a href="#">문화</a></li>
+				  <li><a href="#">교통</a></li>
+				  <li><a href="#">안전</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">알림마당</a></li>
+			</ul>
+		  </div>
+		</nav>
+		
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+		<script>
+		$('nav li').hover(
+		  function() {
+			  $('ul', this).stop().slideDown(200);
+		  },
+			function() {
+			$('ul', this).stop().slideUp(200);
+		  }
+		);
+		</script>
+
+	</div>
+	
+	<!-- 2. 콘텐츠 영역 -->
+	
+	<div id="content"> 
+
+
+	
+		
+		<div class="topcon">
+		
+			<!--로고 -->
+			<a href="./index.html"><img class="logo" src="img/logo.png"></a>
+			
+			<div class="searchbar">
+				<span class="keyword">
+				<input type="text" id="nx_query" name="query" class="box_window" maxlength="255" accesskey="s" value="" autocomplete="off" title="검색어 입력">
+				</span>
+			</div>
+			
+			<button type="submit">검색</button>
+		</div>
+		
+		
+		<div class="midcon">
+			<div class="sidebar">
+				<div class="sidebar-top">
+					<h3>일산동구소개</h3>
+					<p> 살기 좋은 도시, 일산동구</p>
+				
+				</div>
+				<div class="sidebar-list">
+					<ul>
+						<li><a href="#">열린구청장</a></li>
+						<li><a href="#">정책추진방향</a></li>
+						<li><a href="#">구청안내</a></li>
+						<li><a href="#">구청자료실</a></li>
+						<li><a href="#">조직도</a></li>
+					</ul>
+				</div>
+				
+				
+				
+			</div>
+			
+			<div class="contents">
+				<div class="intro">
+					<div class="intro-top">
+						<h2>인사말</h2>
+					</div>
+					
+					<div class="intro-mid">
+						<div class="intro_img">
+						<img src="img/intro_photo.jpg">
+						<p>
+						소통과 믿음이 함께하는 29만 일산동구 주민 여러분!!<br>
+						일산동구 홈페이지 방문을 환영합니다. 
+						</p>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="botcon">
+			
+		</div>
+			
+		
+	
+	
+	</div>
+	
+	
+	<div id="footer">
+		<div class="fnb">
+			<ul>
+				<li><a href="#">개인정보취급방침</a></a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">문의 보내기</a></li>
+				<li><a href="#">공문 보내기</a></li>
+				<li><a href="#">기타</a></li>
+			</ul>
+		</div>
+		
+		<div class="info">
+			<div>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+	
+	
+	
+	
+	
+
+</body>
+</html>

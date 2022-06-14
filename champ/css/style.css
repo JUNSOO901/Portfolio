@@ -1,0 +1,405 @@
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; margin-bottom:0!important}
+a { outline:0; text-decoration:none;!important}
+a:hover,a:focus{text-decoration:none!important}
+img { border:0;}
+body { font-family:Oswald; min-width : 1280px;} 
+::-webkit-scrollbar {}
+
+
+html, body{
+	height:100%;
+}
+
+#wrap{
+	position:relative;
+	width : 100vw;
+	background:#fff;
+}
+
+#header{
+	position:relative;
+	top:0;
+	width : 100vw;
+	background:#fff;
+	 z-index:99;
+}
+.top {background:#222; height:40px;}
+.top nav {height:40px; width:60%; margin:0 auto;}
+.top nav li{height:40px; float:left;text-align:center; margin-right:20px; line-height:35px;}
+.top nav a{color:#fff;}
+.mainmenu {background:#fff; width:1260px; height:80px; margin:0 auto;}
+.mainmenu ul {float:left; height:80px; z-index:99;}
+.mainmenu li {float:left; width:160px; height:80px; text-align:center; line-height:75px; transition:all 0.5s;}
+.mainmenu li a {float:left; width:20%;height:80px; text-align:center; line-height:75px; transition:all 0.5s;}
+.mainmenu li:hover {background:#F49719; color:#fff; transition:all 0.5s;}
+.mainmenu li a {font-size:24px; color:#000; width:100%; height:80px;}
+.mainmenu li a:hover {background:#F49719; color:#fff; transition:all 0.5s;}
+.main_logo img {position:relative; float:left; width:220px; margin:5px; margin-left:0px; margin-right:60px;}
+.main_logo {float:left; padding:10px; height:60px;}
+.gallery{position:relative;width : 100vw; overflow:hidden;z-index:98;}
+.gallery img {width:100%; height:auto;overflow:hidden;z-index:98;}
+.item img {float:left;}
+.mainmenu li ul {float:left; height: auto;background:#1a1a1a; border-bottom:3px solid #F49719; display:none; }
+.mainmenu li ul li {width:160px; height:40px; text-align:center; line-height:40px; border-bottom:1px dotted #555;}
+.mainmenu li ul li a{width:160px; height:40px; text-align:center; line-height:40px; font-size:14px; color:#fff;}
+
+
+.autoplay {float:left; width:100%; }
+.autoplay div {float:left; width:100%;overflow:hidden;}
+
+
+
+/*두번째 메뉴*/
+
+
+
+
+/*첫번째 박스*/
+.login {float:left;padding:30px;}/*첫번째 박스(로그인)*/
+.login_id{float:left;width:240px; height:100px; float:left; background:#999;}
+.login_id input {width:240px; height:50px; border:1px solid #FFBB00;}
+.login_submit {float:left;width:80px; height:100px;background:#333;}
+.login_submit input {width:80px; height:100px; background:#FFBB00; -webkit-appearance: none; border: none; border-radius: 0;
+					 color:#000; font-weight:bold;}
+.login_submit input:hover {background:#EDA900;}
+.login a {float:left; width:155px; height: 50px; background:#FFBB00; text-align:center; line-height:50px; margin-top: 7px; color:#111; font-weight:bold;}
+.login a:hover {background:#EDA900; color:#000;}
+.join { margin-left:10px;}
+
+.onair {float:left;padding:30px; padding-top:0;}/*첫번째 박스(ON-AIR)*/
+.onair p {float:left;width:160px; height:50px; text-align:center; margin-top:5px; line-height:55px; font-weight:bold;}
+.onair span {color:#FF0000;}
+
+
+/*두번째 박스*/
+.clip_box {padding:20px;}
+.clip_box img{width:100%; height:100%;}
+.clipBig {width:340px; height:245px; background:#ccc; margin-bottom:10px;overflow:hidden;}
+.clipBig p{
+	display: block;
+	font-size: 14px;
+	font-family:돋움;
+	letter-spacing:-1px;
+	line-height:140%;
+	padding: 10px 0;
+	background: #111;
+	filter:alpha(opacity=75);
+	opacity:.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	color: #fff;
+	position: relative;
+	bottom: 36px;
+	left: 0px;
+	padding: 10px;
+	margin: 0;
+	height:60px;
+	width: 340px;
+	border-top: 1px solid #999;
+	transition:all 0.2s;
+	}
+	
+.clip div{overflow:hidden;}
+.clip img{height:100%;}
+.clip div:nth-child(1) { float:left;width:165px; height:122.5px;background:#ddd; margin-right:10px; margin-bottom:10px;}
+.clip div:nth-child(2) { float:left;width:165px; height:122.5px;background:#ddd;}
+.clip div:nth-child(3) { float:left;width:165px; height:122.5px;background:#ddd; margin-right:10px; margin-bottom:10px;}
+.clip div:nth-child(4) { float:left;width:165px; height:122.5px;background:#ddd;}
+.clip div:hover {transition:all 0.3s; }
+
+.clip p{
+	display: block;
+	font-size: 11px;
+	font-family:돋움;
+	letter-spacing:-1px;
+	line-height:140%;
+	padding: 10px 0;
+	background: #111;
+	filter:alpha(opacity=75);
+	opacity:.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	color: #fff;
+	position: relative;
+	bottom: 26px;
+	left: 0px;
+	padding: 5px;
+	margin: 0;
+	width: 165px;
+	border-top: 1px solid #999;
+	transition:all 0.2s;
+	height:50px; 
+	 }
+
+.clipBig p span{
+
+	float:left; 
+	width:340px; 
+	height:40px; 
+	margin-top:5px; 
+	transition:all 0.5s; 
+	font-size:12px;
+}
+.clip p span {
+	float:left; 
+	width:165px; 
+	height:40px; 
+	margin-top:5px; 
+	transition:all 0.5s; 
+	font-size:12px;
+	}
+.clipBig p span:hover {display:block; transition:all 0.2s;}
+.clipBig p:hover {position: relative; bottom: 60px; left: 0px; padding: 10px; height:60px; transition:all 0.2s;}
+
+.clip p span:hover {display:block; transition:all 0.2s;}
+.clip p:hover {position: relative; bottom: 50px; left: 0px; padding: 5px; height:50px; transition:all 0.2s;}
+/*두번째 박스 끝*/
+
+
+/*세번째 박스*/
+.event_box {padding:20px;}
+.event {width:340px; height:auto;}
+.event_box img{width:340px; height:auto;}
+.event_box div:nth-child(1) {margin-bottom:30px;}
+.event_box div:nth-child(2) {margin-bottom:30px;}
+.event_box div:nth-child(3) {margin-bottom:30px;}
+.event_box div:nth-child(4) {}
+/*세번째 박스 끝*/
+
+
+/*네번째 박스 시작*/
+.notice {float:left; padding:30px; overflow:hidden;}
+.notice_title {float:left; width:320px; height:30px; border-bottom:1px solid #aaa;}
+.notice_title a{ color:#000; font-weight:bold;}
+.notice_title div{float:left; height:30px; text-align:center; line-height:30px;}
+.notice_title div:nth-child(1) {width:50px; background:#FFBB00; margin-right:1px;}
+.notice_title div:nth-child(2) {width:50px; background:#FFBB00; margin-right:1px;}
+.notice_title div:nth-child(3) {width:50px; background:#FFBB00;}
+.notice_title div:nth-child(1):hover {background:#EDA900;}
+.notice_title div:nth-child(2):hover {background:#EDA900;}
+.notice_title div:nth-child(3):hover {background:#EDA900;}
+.notice_list { float:left; width:100%; height:460px; overflow:hidden; }
+.notice_list li{ float:left; width: 100%; height:30.6px; line-height:30px; overflow:hidden; border-bottom:1px dotted #ccc;}
+.notice_list a {font-weight:bold; color:#000;}
+/*네번째 박스 끝*/
+
+/*다섯번째 박스 시작*/
+.freeboard {float:left; padding:30px;}
+.freeboard_img {float:left; width:320px; height:150px; margin-bottom:15px; }
+.freeboard_img div{float:left; width:155px; height:150px; padding:0px; overflow:hidden; margin-top:10px; }
+.freeboard_img div:nth-child(1) {margin-right:10px;}
+.freeboard_img img{float:left; height:122.5px;}
+.freeboard_img p{float:left; width:165px; text-align:center; color:#000; font-weight:bold;}
+/*다섯번째 박스 끝*/
+
+/*6번째 박스(편성표) 시작*/
+.schedules {float:left; padding:30px;}
+.schedules_day {float:left; width: 320px; height:40px;background:#FFBB00;}
+.schedules_day p {float:left; width:220px; height:40px; margin-left: 50px; text-align:center; padding-top:10px; font-size:16px; font-weight:bold;}
+.schedules_day i {font-size:20px; height:40px; width:40px; color:#000; }
+.schedules_day i:hover {transform:scale(1.1); transition:all 0.3s;}
+.schedules_table {float:left; width: 320px; height: 450px; background:#eee;}
+.schedules_table li {float:left; width: 320px; height:30px; text-align:center; overflow:hidden; line-height:30px; border-bottom:1px dotted #ddd;}
+.schedules_table p {float:left; width: 50px; height:30px; border-right:1px dotted #ddd; font-weight:bold; font-size:12px;}
+.schedules_table span {float:left; width:270px; height:30px; font-size:12px; text-align:left; padding-left:10px; font-weight:bold;}
+
+
+
+.content{
+	position:relative;
+	width:70%;
+	height:700px;
+	margin : 0 auto;
+	overflow:visible;
+	padding-bottom : 200px;
+	min-width:1280px;
+	margin-left:15%;
+	transition:all 0.5s;
+	
+}
+
+.content>div{
+	position:relative;
+	float:left;
+	width: 380px;
+	height: 650px;
+	margin:30px;
+}
+
+.content_title {height:50px; width:380px;font-size:24px; line-height:50px; text-shadow:2px 2px 3px #bbb;}
+.content_title img {height:25px; margin-right:10px;}
+.content_title i {float:right; margin-top:15px; margin-right:5px; color:#000; transition:all 1s;}
+.content_title i:hover {transition:all 0.6s; transform:rotate(180deg);}
+.content_box {height:550px; width:380px; background:#F3F3F3; box-shadow:2px 2px 5px #999;}
+
+
+#footer{
+	position: relative;
+	clear:both;
+	width : 100vw;
+	height:200px;
+	background:#ddd;
+	bottom:0;
+}
+
+.footermenu {width:960px; height:30px; margin:0 auto;}
+.footermenu li {float:left; margin-right:40px; height:30px; text-align:center; line-height:35px;}
+.footermenu a {color:#fff;}
+.footermenu a:hover {color:#FFBB00;}
+
+.downfooter {width: 960px;padding-top:40px; margin:0 auto;}
+.footer_logo {float:left; height:60px;}
+.footer_logo img{margin-top:18px; margin-right:20px;}
+.footer.p { width:760px; float:left;}
+
+
+
+
+/* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ 
+/* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ 
+/* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ /* 2 페이지 (소식페이지)*/ 
+
+
+
+
+
+.content_notice {
+	float:left;
+	width:100%;
+	padding:30px;
+	padding-left:20%;
+	padding-right:11%;
+}
+.noticepage {
+	float:left;
+	position:relative;
+	width:760px; 
+	margin:0 auto; 
+	margin-right:50px; 
+	margin-bottom: 20px;}
+
+/*타이틀*/
+.noticepage_title {float:left;width:100%; height:40px; text-align:center; margin-bottom:10px; }
+.noticepage_title li{font-size:12px; float:left; line-height:20px;margin-right: 10px; }
+.title_big {font-size:40px!important; line-height:10px; line-height:10px!important; margin-right: 30px!important; margin-left:10px; text-shadow:2px 2px 2px #999;}
+.title_list {float:left;  background:#FFBB00; border-radius:30px;  letter-spacing:1px;}
+.title_list a{float:left; padding:5px; color:#333; font-weight:bold;}
+.title_list:hover {background:#000;}
+.title_list a:hover {color:#fff;}
+
+/*내용*/
+.noticepage_text {float:left;	width:760px; 
+	height:860px; background:#F3F3F3; box-shadow:2px 2px 5px #999; padding:30px; }
+.noticepage_text_title {float:left; height:50px;}
+.noticepage_text_title p {float:left; font-size:20px; font-weight:bold; margin-left:15px;}
+/*검색바*/
+.noticepage_text_title div {float:right; height:50px; padding-left:360px;}
+.noticepage_text_title input {float:left; right:0px; border:none; border-bottom:1px solid #ddd; padding:5px; }
+.noticepage_text_title input:nth-child(2) {background:#FFBB00; color:#333;}
+.noticepage_text_title input:nth-child(2):hover {background:#FFaa00;}
+.noticepage_text_list {
+	float:left;
+	width:700px;
+	height:695px;
+	background:#fff;
+	box-shadow:2px 2px 5px #999;
+	overflow:hidden;
+}
+	
+.noticepage_text_list li {
+	float:left;
+	width:100%;
+	height:34.79px;
+	border-bottom:1px dotted #aaa;
+	line-height:34px;
+}
+.noticepage_text_list a {height:34.79px; width:500px; float:left; padding-left:20px; color:#666; font-weight:bold;}
+.noticepage_text_list p {height:34.79px; width:150px; float:left; border-left:1px dotted #ddd; text-align:center;}
+.noticepage_text_list span {height:34.79px; width:50px; float:left;border-left:1px dotted #ddd; text-align:center;}
+.noticepage_text_list a:hover {color:#000;}
+.noticepage_text_list li:hover {background:#eee;}
+/*페이지넘기는거*/
+.noticepage_text_footer	{float:left; width:100%; height:40px; margin-top:20px;padding-left:37%;}
+.noticepage_text_footer a {float:left;height:30px; width:25px; line-height:30px; background:#fff; border-right:1px dotted #ddd; text-align:center;margin-top:5px; color:#333; font-weight:bold;}
+	
+	
+/* 옆에 극장판 4개 */
+.movie1,.movie2{float:left; width: 365px; height:200px;background:#F3F3F3; box-shadow:2px 2px 5px #999; margin-bottom:20px; margin-right: 30px; overflow:hidden;}
+.movie3 { float:left; width: 365px; height:200px;background:#F3F3F3; box-shadow:2px 2px 5px #999; margin-bottom:20px; margin-right:0px; overflow:hidden;}
+
+.movie1 img,.movie2 img,.movie3 img {width:100%;}
+
+.movie1 div,.movie2 div,.movie3 div{
+	display: block;
+	font-size: 14px;
+	font-family:돋움;
+	letter-spacing:-1px;
+	line-height:140%;
+	padding: 10px 0;
+	background: #111;
+	filter:alpha(opacity=75);
+	opacity:.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	color: #fff;
+	position: relative;
+	bottom: 120px;
+	left: 0px;
+	padding: 10px;
+	margin: 0;
+	width: 365px;
+	border-top: 1px solid #999;
+	transition:all 0.2s;
+	height:120px; 
+	 }
+
+.movie1 p,.movie2 p,.movie3 p {height:20px; overflow:hidden;}
+
+
+}
+.movie1 span,.movie2 span,.movie3 span {
+	float:left; 
+	width:300px; 
+	height:100px; 
+	margin-top:50px; 
+	transition:all 0.5s; 
+	font-size:8px;
+	}
+
+.movie1 p span:hover,.movie2 p span:hover,.movie3 p span:hover {display:block; transition:all 0.2s;}
+.movie1 div:hover,.movie2 div:hover,.movie3 div:hover {position: relative; bottom: 190px; left: 0px; padding: 10px; transition:all 0.2s;}
+
+
+
+
+
+
+
+
+
+/*  3 페이지 ( 프로그램 *//*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ 
+/*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ 
+/*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ /*  3 페이지 ( 프로그램 */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

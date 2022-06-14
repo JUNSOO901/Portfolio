@@ -1,0 +1,145 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+/*    Reset CSS  */
+* { 
+margin:0;  
+padding:0; }
+
+ol,ul { 
+list-style: none; }
+
+a { 
+outline:0; 
+text-decoration:none; 
+color:#bbb;}
+
+img { 
+border:0;}
+
+body { 
+position:fixed;  
+width:100%; 
+height:100%; 
+background:#111;}
+
+   /*  동영상   */
+
+.vid { 
+width:70%; 
+height:70%; 
+position:fixed; 
+top:150px; 
+left:10px; 
+opacity:0.9;
+}
+
+.vid video {
+	width:100%; 
+	min-width:1000px;}
+	
+	/* 로고 */	
+	
+	h1 { 
+position:fixed; 
+top:15px;
+left:15px;
+z-index:10;}
+
+h1 img { 
+width:240px; 
+height:auto;}
+
+header { 
+width:100%; 
+height:300px; 
+position:fixed; 
+top:-180px; 
+left:0px; 
+background:linear-gradient(-10deg,#fff,#747474,#FFF); 
+transform:skewY(-7deg) }
+
+/* 첫번째 메뉴 */ 
+
+#das {
+width:100%; 
+position:relative; 
+top:0px; 
+
+border:1px solid #f00;
+
+}
+	
+#das>li{
+	/* float:left;
+	display:inline-block;  */
+	position:relative;
+	top : 250px;
+	left: 330px;
+	
+}
+
+#das>li>a { 
+ 
+float:left;  
+/* display:inline;  */  
+width :220px; 
+height:50px; 
+font :bold 18px/3 play;
+color:#222;
+box-sizing:border-box;
+padding-right: 40px;
+text-align :center; 
+}
+
+#das>li:hover>a { 
+background: #111; 
+color:#fff; }
+
+#das em {
+	display:inline-block;
+	transform: skewX(-7deg)!important;
+}
+
+#das em i {
+	margin-right:20px;
+}
+
+#das ul { 
+	position:absolute; 
+	left:0px;  
+	top:0px; 
+	opacity:0; 
+	transition:all 0.4s;
+}
+#das>li:hover ul { 
+	opacity:0.8; 
+	left:205px; 
+}
+#das ul a { 
+	display:block; 
+	width:150px; 
+	height:40px; 
+	background:#222; 
+	border-bottom:1px solid #b9fb05; 
+	font:bold 16px/2.5 arial; 
+	color:#fff; 
+	box-sizing:border-box; 
+	padding-left:50px; 
+	margin-bottom:3px; 
+	transition:all 0.5s; 
+}
+#das ul a:hover { 
+	background:#b9fb05; 
+	color:#333; 
+}
+#das>li.on ul { 
+	opacity:0.8; 
+	left:205px; 
+	top:-10px; 
+}
+#das li.on ul a { 
+	background:#444; 
+	opacity:0.7; 
+} 
